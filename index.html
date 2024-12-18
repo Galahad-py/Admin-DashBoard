@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/43c58efa0f.js" defer crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="left-container">
+        <div class="logo">
+                <h3>IconicA</h3>
+        </div>
+
+        <div class="nav-area">
+                <div>
+                    <img src="/icons/home icon.svg" alt="" srcset="">
+                    <p>Home</p>
+                    <!-- <img src="/icons/add icon.svg" class="plus-icon" alt="Add"> -->
+                </div>
+
+                <div>
+                    <img src="/icons/projects icon.svg" alt="" srcset="">
+                    <p>Projects</p>
+                    <img src="/icons/add icon.svg" class="plus-icon" alt="Add">
+                </div>
+
+                <div>
+                    <img src="/icons/tasks icon.svg" alt="" srcset="">
+                    <p>Tasks</p>
+                    <img src="/icons/add icon.svg" class="plus-icon" alt="Add">
+                </div>
+                
+                <div>
+                    <img src="/icons/team icon.svg" alt="" srcset="">
+                    <p>Team</p>
+                    <!-- <img src="/icons/add icon.svg" class="plus-icon" alt="Add"> -->
+                </div>
+                
+                <div>
+                    <img src="/icons/settings-icon.svg" alt="" srcset="">
+                    <p>Settings</p>
+                    <!-- <img src="/icons/add icon.svg" class="plus-icon" alt="Add"> -->
+                </div>
+        </div>
+
+        <div class="premium">
+                <h3>Upgrade to Pro</h3>
+                <p>Get 1 month Free and unlock</p>
+                <button type="button">Upgrade</button>
+        </div>
+
+        <div class="footer">
+            <div>
+                <img src="/icons/information icon.svg" alt="" srcset="">
+                <p>Help & Information</p>
+            </div>
+
+            <div>
+                <img src="/icons/log out icon.svg" alt="">
+                <p>Log Out</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle-container">
+        <div class="hero-text">
+            <div class="hero">
+                <h3>Hello, Odin</h3>
+                <p>Track the team Progress here. You almost reached a Goal!</p>
+            </div>
+            <div class="date">
+                <p>16 May 2023</p>
+                <img src="/icons/calendar-icon.svg" alt="Calendar" srcset="">
+            </div>
+        </div>
+
+
+        <div class="metrics-container">
+                <div class="metrics finished">
+                    <div class="metric-icon">
+                        <img src="/icons/like-icon.svg" alt="">
+                    </div>
+                    <div class="metric-content">
+                        <p class="metric-label">Finished</p>
+                        <div class="metric-text">
+                            <h3 class="metric-value">18</h3>
+                            <p class="metric-delta">
+                                <span class="delta-icon"></span>
+                                +8 tasks
+                            </p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="metrics tracked">
+                    <div class="metric-icon">
+                        <img src="/icons/timer-icon.svg" alt="">
+                    </div>
+                    <div class="metric-content">
+                        <p class="metric-label">Tracked</p>
+                        <div class="metric-text">
+                            <h3 class="metric-value">31h</h3>
+                            <p class="metric-delta">
+                                <span class="delta-icon"></span>
+                                -6 hours
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="metrics efficiency">
+                    <div class="metric-icon">
+                        <img src="/icons/progress-icon.svg" alt="">
+                    </div>
+                    <div class="metric-content">
+                        <p class="metric-label">Efficiency</p>
+                        <div class="metric-text">
+                            <h3 class="metric-value">93%</h3>
+                            <p class="metric-delta">
+                                <span class="delta-icon"></span>
+                                +12%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            
+        <!-- Performance Section -->
+        <section class="performance-section">
+            <div class="performance-header">
+                <h2>Performance</h2>
+                <button class="date-range-btn">01-07 May ▼</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="lineChart"></canvas>
+            </div>
+        </section>
+
+        <div class="tasks-container">
+                <div class="tasks-header">
+                    <div class="tasks-progress">
+                        <div>
+                            <h3>Current Tasks</h3>
+                        </div>
+                        <div>
+                            <p style="font-weight: bold;">Done 30%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="tasks-button" type="button">Week</button>
+                    </div>
+                </div>
+
+                <div class="task-list-container">
+                    <div class="task-item">
+                        <div class="task-icon" style="background-color: #7ca9f648;">
+                            <img src="/icons/pulse-icon.svg" alt="Product review">
+                        </div>
+                        <div class="task-details">
+                            <p class="task-title">Product Review for UI8 Market</p>
+                            <div class="task-status">
+                                <div class="status-indicator-progress"></div>
+                                <span><p>In progress</p></span>
+                            </div>
+                        </div>
+                        <div class="task-duration">
+                            <span>4h</span>
+                        </div>
+                        <div class="task-actions">
+                            <img src="/icons/loading-icon.svg" alt="More Options">
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-icon" style="background-color: #ffb07041;">
+                            <img src="/icons/magnify-icon.svg" alt="UX Research">
+                        </div>
+                        <div class="task-details">
+                            <p class="task-title">UX Research for Product</p>
+                            <div class="task-status">
+                                <div class="status-indicator-progress"></div>
+                                <span><p>On hold</p></span>
+                            </div>
+                        </div>
+                        <div class="task-duration">
+                            <span>8h</span>
+                        </div>
+                        <div class="task-actions">
+                            <img src="/icons/loading-icon.svg" alt="More Options">
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-icon" style="background-color: #f0f0f0;">
+                            <img src="/icons/app-design-icon.svg" alt="App Design">
+                        </div>
+                        <div class="task-details">
+                            <p class="task-title">App design and development</p>
+                            <div class="task-status">
+                                <div class="status-indicator-progress"></div>
+                                <span><p>Done</p></span>
+                            </div>
+                        </div>
+                        <div class="task-duration">
+                            <span>32h</span>
+                        </div>
+                        <div class="task-actions">
+                            <img src="/icons/loading-icon.svg" alt="More Options">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <div class="profile">
+            <div class="profile-img">
+                <div class="profile-img-container">
+                    <img src="/images/photo_2024-12-17_07-47-37.jpg" alt="Profile Image">
+                </div>
+                <p style="font-size: 13px; font-weight: bold;">Megan Norton</p>
+                <p style="font-size: 12px; color: rgb(123, 121, 121);">@megnorton</p>
+            </div>
+
+            <div class="message">
+                <div class="message-img">
+                    <img src="/icons/call-icon.svg" alt="Make a Phone call">
+                </div>
+                <div class="message-img">
+                    <img src="/icons/video-call-icon.svg" alt="ake a video call">
+                </div>
+                <div class="message-img">
+                    <img src="/icons/more-vertical-icon.svg" alt="More Options">
+                </div>
+            </div>
+        </div>
+
+        <!-- comment section -->
+        <div class="comment-section">
+            <!-- Comment 1 -->
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="/images/pexels-anastasia-nagibina-1116204043-27153718.jpg" alt="Floyd Miles" class="avatar">
+                    <div class="comment-info">
+                        <h4 class="commenter-name">Floyd Miles</h4>
+                        <span class="comment-action">Commented on <span class="project-name">Stark Project</span></span>
+                    </div>
+                    <span class="timestamp">10:15 AM</span>
+                </div>
+                    
+                <div class="comment-message comment-box">
+                    <p>
+                        Hi! Next week we'll start a new project. I'll tell you all the details later 
+                        <span class="emoji">👍</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Comment 2 -->
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="/images/pexels-bestbe-models-975242-1995880.jpg" alt="Guy Hawkins" class="avatar">
+                    <div class="comment-info">
+                        <h4 class="commenter-name">Guy Hawkins</h4>
+                        <span class="comment-action">Added a file to <span class="project-name">7Heros Project</span></span>
+                    </div>
+                    <span class="timestamp">10:15 AM</span>
+                </div>
+                <div class="file-attachment comment-box">
+                    <div> <img src="/images/photo_2024-12-17_07-47-37.jpg" alt="" class="file-icon"></div>
+                    <span class="file-name">Homepage.fig</span>
+                    <span class="file-size">13.4 MB</span>
+                    <div class="download-icon">⬇️</div>
+                </div>
+            </div>
+            
+            <!-- Comment 3 -->
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="/images/pexels-ketut-subiyanto-4584548.jpg" alt="Kristin Watson" class="avatar">
+                    <div class="comment-info">
+                        <h4 class="commenter-name">Kristin Watson</h4>
+                        <span class="comment-action">Commented on <span class="project-name">7Heros Project</span></span>
+                    </div>
+                    <span class="timestamp">10:15 AM</span>
+                </div>
+                <p class="comment-message comment-box">Looks great! Can't wait to see the final version.</p>
+            </div>
+        </div>
+
+        <div class="dialogue-box"></div>
+    </div>
+
+</body>
+</html>
